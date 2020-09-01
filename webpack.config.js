@@ -68,5 +68,11 @@ module.exports = {
             },
             canPrint: true
         })
-    ]
-}
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000,
+        open: true
+    }
+};
